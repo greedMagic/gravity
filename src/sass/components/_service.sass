@@ -1,0 +1,75 @@
+.service
+	position: relative
+	margin-top: 140px
+	margin-bottom: 140px
+	overflow: hidden
+
+.service__header
+	+container
+	+row
+	margin-bottom: 100px
+
+.service__headline
+	position: relative
+	flex-basis: 100%
+	max-width: 100%
+	margin-bottom: 40px
+	+col
+	font-weight: 500
+	font-size: 14px
+	line-height: 1.5
+	letter-spacing: 4px
+	text-transform: uppercase
+	color: rgba($base-color, 0.7)
+
+.service__headline::before
+	display: inline-block
+	padding-right: 10px
+	content: "—"
+
+.service__lead
+	flex-basis: 50%
+	max-width: 50%
+	+col
+	+title
+	letter-spacing: -1px
+
+.service__list
+	flex-basis: 45%
+	max-width: 45%
+	+row
+	margin-left: 5%
+
+.service__item
+	width: 255px
+	padding: 0px 15px 0 85px
+	line-height: 2.15
+	color: rgba($base-color, 0.5)
+
+.service__slider .draggable
+	overflow: visible
+
+.service__slider_wrap
+	position: relative
+	+container
+
+.service__slider-items
+	position: relative
+
+.service__slider-item
+	display: inline-flex !important
+	+col
+
+.service__modal
+	width: 825px
+	height: 500px
+
+.service__slider-controls
+	+container
+	margin-top: 40px
+	margin-bottom: 40px
+	display: flex
+
+.service__button
+	margin: 0 15px
+

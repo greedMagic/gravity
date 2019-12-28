@@ -72,6 +72,8 @@
     "webpack-cli": "^3.3.0"
   },
   "dependencies": {
+    "simple-parallax-js": "^5.2.0",
+    "slick-carousel": "^1.8.1",
     "stylelint-selector-bem-pattern": "^2.1.0"
   }
 }

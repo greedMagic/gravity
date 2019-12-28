@@ -1,0 +1,73 @@
+.footer
+	position: relative
+	color: #ffffff
+	background-color: #515151
+
+.footer__wrap
+	+container
+	+row
+
+.footer__top,
+.footer__bottom
+	flex-basis: 100%
+	max-width: 100%
+	+row
+	align-items: center
+
+.footer__top
+	padding-top: 60px
+	padding-bottom: 40px
+
+.footer__bottom
+	position: relative
+	padding-top: 30px
+	padding-bottom: 40px
+	&::before
+		position: absolute
+		top: 0
+		right: 0
+		left: 0
+		display: block
+		margin: 0 15px
+		height: 1px
+		content: ""
+		background-color: rgba(#ffffff, 0.2)
+
+.footer__logo
+	flex-basis: 16.66666667%
+	max-width: 16.66666667%
+	+col
+	color: #ffffff
+
+.footer__links
+	flex-basis: 50%
+	max-width: 50%
+	width: 100%
+	+row
+
+.footer__socials
+	+row
+	margin-left: auto
+
+.footer__form
+	flex-basis: 33.33333333%
+	max-width: 33.33333333%
+	+col
+
+.footer__link
+	display: flex
+	align-items: center
+	justify-content: center
+	+col
+	font-size: 18px
+	line-height: 1.5
+	color: #ffffff
+	text-decoration: none
+
+.footer__link_pale
+	color: rgba(#ffffff, 0.4)
+
+.footer__link-icon svg
+	width: auto
+	height: 24px
+	color: inherit

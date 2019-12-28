@@ -1,0 +1,50 @@
+.client
+	position: relative
+	padding-top: 100px
+	padding-bottom: 60px
+	background-color: #fafafa
+
+.client__header
+	+container
+	+row
+
+.client__headline
+	flex-basis: 58.33333333%
+	max-width: 58.33333333%
+	+col
+	+title
+	letter-spacing: -1px
+
+.client__desc
+	flex-basis: 41.66666667%
+	max-width: 41.66666667%
+	+col
+
+.client__lead
+	margin-top: 10px
+	margin-bottom: 15px
+	position: relative
+	font-weight: 500
+	font-size: 14px
+	line-height: 1.5
+	letter-spacing: 4px
+	text-transform: uppercase
+	color: rgba($base-color, 0.7)
+
+.client__lead::before
+	display: inline-block
+	padding-right: 10px
+	content: "—"
+
+.client__list
+	+container
+	+row
+	margin: 70px auto
+	justify-content: space-between
+	align-items: baseline
+
+.client__item
+	+col
+
+.client__image
+	overflow: hidden

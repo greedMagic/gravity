@@ -1,0 +1,44 @@
+.button
+	position: relative
+	display: inline-flex
+	justify-content: center
+	align-items: center
+	text-decoration: none
+	border: none
+	cursor: pointer
+
+.button_more
+	padding: 15px
+	font-weight: 500
+	font-size: 14px
+	line-height: 1.5
+	letter-spacing: 4px
+	text-transform: uppercase
+	color: #ffffff
+	background-color: $button
+	transition: background-color .35s
+	&:focus,
+	&:hover
+		background-color: darken($button, 15%)
+		transition-duration: .175s
+	&:active
+		transform: translateY(2px)
+		transition-duration: .175s
+
+.button_control
+	width: 50px
+	height: 50px
+	line-height: 1
+	color: #ffffff
+	background-color: $button-slide
+	&:focus,
+	&:hover
+		transition-duration: .175s
+		background-color: darken($button, 15%)
+	&:active
+		transform: translateY(2px)
+		transition-duration: .175s
+
+.button__icon svg
+	width: auto
+	height: 18px

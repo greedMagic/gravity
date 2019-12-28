@@ -7,34 +7,75 @@ title: Work around you and your team
 
   {% include "partials/_header.html" %}
 
-  <div class="homeSlider">
-    <div class="homeSlider__items">
-      <div class="homeSlider__item">
-        <div class="homeSlider__box" style="background-image: url();">
-          <p class="homeSlider__title">Work around you and your team</p>
-          <p class="homeSlider__text">From ads that dance or sing to MTV-like commercials, online advertisers are now using a new type of technology “rich media” to attract consumers.</p>
-          <a class="homeSlider__button button" href="#">Get started</a>
-          <a class="homeSlider__modal modal"href="#"></a>
+  <div class="welcome">
+    <div class="welcome__items">
+      <div class="welcome__item">
+        <div class="welcome__inner">
+          <div class="welcome__box">
+            <p class="welcome__title">Work around you and your team</p>
+            <p class="welcome__text">From ads that dance or sing to MTV-like commercials, online advertisers are now using a new type of technology “rich media” to attract consumers.</p>
+            <a class="welcome__button button button_more" href="#">Get started</a>
+            <div class="welcome__modal modal">
+              <div class="modal__box">
+                <div class="modal__image">
+                  <img src="img/welcome-modal.jpg" alt="Lorem ipsum dolor sit amet.">
+                </div>
+                <div class="modal__overlay">
+                  <div class="modal__icon">
+                    <svg viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill="#fff" d="M0 0h65v65H0z"/><path d="M42.697 32.849l-14.773 8.529V24.318l14.773 8.53z" fill="#F96241"/>
+                    </svg>
+                  </div>
+                </div>
+                <a class="modal__more" href="#">
+                  <span class="visually-hidden">Lorem ipsum dolor sit amet.</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="welcome__image">
+          <img class="js-parallax" src="img/welcome-1.jpg" alt="">
+        </div>
+      </div>
+      <div class="welcome__item">
+        <div class="welcome__inner">
+          <div class="welcome__box">
+            <p class="welcome__title">Work around you and your team</p>
+            <p class="welcome__text">From ads that dance or sing to MTV-like commercials, online advertisers are now using a new type of technology “rich media” to attract consumers.</p>
+            <a class="welcome__button button button_more" href="#">Get started</a>
+            <a class="welcome__modal modal" href="#">
+              <img src="img/welcome-modal.jpg" alt="Video">
+            </a>
+          </div>
+          <div class="welcome__image">
+            <img class="js-parallax" src="img/welcome-2.jpg" alt="">
+          </div>
         </div>
       </div>
     </div>
-    <div class="homeSlider__progressbar"></div>
+    <div class="welcome__progressbar"></div>
   </div>
 
   <main class="main">
 
     <section class="blockquote">
       <div class="blockquote__wrap">
+        <div class="blockquote__image">
+          <img src="img/blockquote.jpg" alt="lorem">
+        </div>
         <blockquote class="blockquote__content">
           <h2 class="blockquote__title">We solve digital problems with an outstanding creative flare</h2>
           <p class="blockquote__text">The best time to view the moon, obviously, is at night when there are few clouds and the weather is accommodating for a long and lasting study.</p>
           <p class="blockquote__text">For most of us, the idea of astronomy is something we directly connect to “stargazing”, telescopes and seeing magnificent displays in the heavens.</p>
           <footer class="blockquote__footer">
-            <div class="blockquote__image">
-              <img src="" alt="Lorem">
+            <div class="blockquote__avatar">
+              <img src="img/avatar.jpg" alt="Lorem">
             </div>
-            <p class="blockquote__author">Denis Shepovalov</p>
-            <p class="blockquote__position">Co-Founder & CEO</p>
+            <div class="blockquote__text">
+              <p class="blockquote__author">Denis Shepovalov</p>
+              <p class="blockquote__position">Co-Founder & CEO</p>
+            </div>
           </footer>
         </blockquote>
       </div>
@@ -42,8 +83,8 @@ title: Work around you and your team
 
     <section class="service">
       <header class="service__header">
-        <p class="service__subtitle">Services</p>
-        <h2 class="service__title">We love work hard and explore new things that’s why we cover lot of things. Check our service list and view details</h2>
+        <h2 class="service__headline">Services</h2>
+        <h3 class="service__lead">We love work hard and explore new things that’s why we cover lot of things. Check our service list and view details</h3>
         <ul class="service__list">
           <li class="service__item">Multimedia</li>
           <li class="service__item">Creative Strategy</li>
@@ -54,35 +95,95 @@ title: Work around you and your team
           <li class="service__item">Branding</li>
         </ul>
       </header>
-      <div class="serviceSlider">
-        <div class="serviceSlider__items">
-          <div class="serviceSlider__item">
-            <a class="serviceSlider__modal modal" style="background-image: url();" href="#">Lorem ipsum dolor sit amet.</a>
-          </div>
-          <div class="serviceSlider__item">
-            <a class="serviceSlider__modal modal" style="background-image: url();" href="#">Lorem ipsum dolor sit amet.</a>
+      <div class="service__slider">
+        <div class="service__slider_wrap">
+          <div class="service__slider-items">
+            <div class="service__slider-item">
+              <div class="service__modal modal">
+                <div class="modal__box">
+                  <div class="modal__image">
+                    <img src="img/service-1.jpg" alt="Lorem ipsum dolor sit amet.">
+                  </div>
+                  <div class="modal__overlay">
+                    <div class="modal__icon">
+                      <svg viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#fff" d="M0 0h65v65H0z"/><path d="M42.697 32.849l-14.773 8.529V24.318l14.773 8.53z" fill="#F96241"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <a class="modal__more" href="#">
+                    <span class="visually-hidden">Lorem ipsum dolor sit amet.</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="service__slider-item">
+              <div class="service__modal modal">
+                <div class="modal__box">
+                  <div class="modal__image">
+                    <img src="img/service-2.jpg" alt="Lorem ipsum dolor sit amet.">
+                  </div>
+                  <div class="modal__overlay">
+                    <div class="modal__icon">
+                      <svg viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#fff" d="M0 0h65v65H0z"/><path d="M42.697 32.849l-14.773 8.529V24.318l14.773 8.53z" fill="#F96241"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <a class="modal__more" href="#">
+                    <span class="visually-hidden">Lorem ipsum dolor sit amet.</span>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="serviceSlider__controls">
-          <button class="serviceSlider__control serviceSlider__control--prev"></button>
-          <button class="serviceSlider__control serviceSlider__control--next"></button>
+        <div class="service__slider-controls">
+          <button class="service__button js-prev button button_control">
+            <span class="button__icon">
+              <svg viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 1.5L2 9.313l7.5 7.812" stroke="currentColor" stroke-width="2"/></svg>
+            </span>
+            <span class="visually-hidden">Назад</span>
+          </button>
+          <button class="service__button js-next button button_control">
+            <span class="button__icon">
+              <svg viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 16.75L9 8.937 1.5 1.125" stroke="currentColor" stroke-width="2"/></svg>
+            </span>
+            <span class="visually-hidden">Вперед</span>
+          </button>
         </div>
       </div>
     </section>
 
-    <section class="feature">
-      <div class="feature__wrap">
-        <div class="feature__content">
-          <h2 class="feature__title"></h2>
-          <p class="feature__text"></p>
-          <ul class="feature__list">
-            <li class="feature__item">
-              <span class="feature__icon"></span>
-              <span class="feature__item-text"></span>
+    <section class="easy-use">
+      <div class="easy-use__images">
+        <img class="easy-use__image-1" src="img/easy-use-1.jpg" alt="">
+        <img class="easy-use__image-2" src="img/easy-use-2.jpg" alt="">
+      </div>
+      <div class="easy-use__wrap">
+        <div class="easy-use__content">
+          <h2 class="easy-use__lead">Well thought with super easy to use</h2>
+          <p class="easy-use__desc">As we approached the palace I could see through the great windows of the first floor the brilliantly illuminated audience chamber of Than Kosis. The immense hall was crowded with nobles and their women.</p>
+          <ul class="easy-use__list">
+            <li class="easy-use__item">
+              <span class="easy-use__item-icon easy-use__item-icon_100">
+                <svg viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 5l5-4S1 11.5 1 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10.436 1c-1.5.5-2.5 3-3 5s-1.092 5 1.5 5c3.592 0 3.092-8 3.092-8M17.436 1c-1.5.5-2.5 3-3 5s-1.092 5 1.5 5c3.592 0 3.092-8 3.092-8M5 15s5-2 11-1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M17 17c-8.5-.898-15 2-15 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="easy-use__item-text">Ultimate Result</span>
             </li>
-            <li class="feature__item">
-              <span class="feature__icon"></span>
-              <span class="feature__item-text"></span>
+            <li class="easy-use__item">
+              <span class="easy-use__item-icon easy-use__item-icon_bag">
+                <svg viewBox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 7H2a1 1 0 00-1 1v14a1 1 0 001 1h14a1 1 0 001-1V8a1 1 0 00-1-1z" stroke="currentColor" stroke-width="2"/>
+                  <path d="M17 18H1v2h16v-2z" fill="currentColor"/>
+                  <path d="M13 10V5a4 4 0 00-8 0v5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </span>
+              <span class="easy-use__item-text">Minimal Design</span>
             </li>
           </ul>
         </div>
@@ -90,114 +191,190 @@ title: Work around you and your team
     </section>
 
     <section class="work">
-      <div class="work__wrap">
-        <header class="work__header">
-          <p class="work__subtitle">our works</p>
-          <h2 class="work__title">Discover our Work</h2>
-          <div class="work__controls workSlider__controls">
-            <a class="workSlider__control" href="#">All</a>
-            <a class="workSlider__control" href="#">Branding</a>
-            <a class="workSlider__control" href="#">Web</a>
-            <a class="workSlider__control" href="#">Development</a>
-            <a class="workSlider__control" href="#">Films</a>
-          </div>
-        </header>
-        <div class="workSlider">
-          <div class="workSlider__items">
-            <div class="workSlider__item">
-              <a class="workSlider__modal modal" href="#">Lorem ipsum dolor sit amet.</a>
+      <header class="work__header">
+        <h2 class="worke__headline">our works</h2>
+        <h3 class="work__lead">Discover our Work</h3>
+        <div class="work__controls">
+          <a class="work__control work__control_current" href="#">All</a>
+          <a class="work__control" href="#">Branding</a>
+          <a class="work__control" href="#">Web</a>
+          <a class="work__control" href="#">Development</a>
+          <a class="work__control" href="#">Films</a>
+        </div>
+      </header>
+      <div class="work__items">
+        <div class="work__item work__modal modal">
+          <div class="modal__box">
+            <div class="modal__image">
+              <img src="img/work-1.jpg" alt="Lorem ipsum dolor sit amet.">
             </div>
-            <div class="workSlider__item">
-              <a class="workSlider__modal modal" href="#">Lorem ipsum dolor sit amet.</a>
+            <div class="modal__overlay">
+              <div class="modal__icon">
+                <svg viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#fff" d="M0 0h65v65H0z"/><path d="M42.697 32.849l-14.773 8.529V24.318l14.773 8.53z" fill="#F96241"/>
+                </svg>
+              </div>
             </div>
-            <div class="workSlider__item">
-              <a class="workSlider__modal modal" href="#">Lorem ipsum dolor sit amet.</a>
-            </div>
-            <div class="workSlider__item">
-              <a class="workSlider__modal modal" href="#">Lorem ipsum dolor sit amet.</a>
-            </div>
-            <div class="workSlider__item">
-              <a class="workSlider__modal modal" href="#">Lorem ipsum dolor sit amet.</a>
-            </div>
-            <div class="workSlider__item">
-              <a class="workSlider__modal modal" href="#">Lorem ipsum dolor sit amet.</a>
-            </div>
+            <a class="modal__more" href="#">
+              <span class="visually-hidden">Lorem ipsum dolor sit amet.</span>
+            </a>
           </div>
         </div>
-        <footer class="work__footer">
-          <p class="work__text">It picks up the words on the page and displays ads that are similar to those words. Then when someone either performs an action or clicks on your page you will get paid.</p>
-          <a class="work__button button" href="#">see our works</a>
-        </footer>
+        <div class="work__item work__modal modal">
+          <div class="modal__box">
+            <div class="modal__image">
+              <img src="img/work-2.jpg" alt="Lorem ipsum dolor sit amet.">
+            </div>
+            <div class="modal__overlay">
+              <div class="modal__icon">
+                <svg viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#fff" d="M0 0h65v65H0z"/><path d="M42.697 32.849l-14.773 8.529V24.318l14.773 8.53z" fill="#F96241"/>
+                </svg>
+              </div>
+            </div>
+            <a class="modal__more" href="#">
+              <span class="visually-hidden">Lorem ipsum dolor sit amet.</span>
+            </a>
+          </div>
+        </div>
+        <div class="work__item work__modal modal">
+          <div class="modal__box">
+            <div class="modal__image">
+              <img src="img/work-3.jpg" alt="Lorem ipsum dolor sit amet.">
+            </div>
+            <div class="modal__overlay">
+              <div class="modal__icon">
+                <svg viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#fff" d="M0 0h65v65H0z"/><path d="M42.697 32.849l-14.773 8.529V24.318l14.773 8.53z" fill="#F96241"/>
+                </svg>
+              </div>
+            </div>
+            <a class="modal__more" href="#">
+              <span class="visually-hidden">Lorem ipsum dolor sit amet.</span>
+            </a>
+          </div>
+        </div>
+        <div class="work__item work__modal modal">
+          <div class="modal__box">
+            <div class="modal__image">
+              <img src="img/work-1.jpg" alt="Lorem ipsum dolor sit amet.">
+            </div>
+            <div class="modal__overlay">
+              <div class="modal__icon">
+                <svg viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#fff" d="M0 0h65v65H0z"/><path d="M42.697 32.849l-14.773 8.529V24.318l14.773 8.53z" fill="#F96241"/>
+                </svg>
+              </div>
+            </div>
+            <a class="modal__more" href="#">
+              <span class="visually-hidden">Lorem ipsum dolor sit amet.</span>
+            </a>
+          </div>
+        </div>
+        <div class="work__item work__modal modal">
+          <div class="modal__box">
+            <div class="modal__image">
+              <img src="img/work-2.jpg" alt="Lorem ipsum dolor sit amet.">
+            </div>
+            <div class="modal__overlay">
+              <div class="modal__icon">
+                <svg viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#fff" d="M0 0h65v65H0z"/><path d="M42.697 32.849l-14.773 8.529V24.318l14.773 8.53z" fill="#F96241"/>
+                </svg>
+              </div>
+            </div>
+            <a class="modal__more" href="#">
+              <span class="visually-hidden">Lorem ipsum dolor sit amet.</span>
+            </a>
+          </div>
+        </div>
+        <div class="work__item work__modal modal">
+          <div class="modal__box">
+            <div class="modal__image">
+              <img src="img/work-3.jpg" alt="Lorem ipsum dolor sit amet.">
+            </div>
+            <div class="modal__overlay">
+              <div class="modal__icon">
+                <svg viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#fff" d="M0 0h65v65H0z"/><path d="M42.697 32.849l-14.773 8.529V24.318l14.773 8.53z" fill="#F96241"/>
+                </svg>
+              </div>
+            </div>
+            <a class="modal__more" href="#">
+              <span class="visually-hidden">Lorem ipsum dolor sit amet.</span>
+            </a>
+          </div>
+        </div>
       </div>
+      <footer class="work__footer">
+        <p class="work__footer-text">It picks up the words on the page and displays ads that are similar to those words. Then when someone either performs an action or clicks on your page you will get paid.</p>
+        <a class="work__button button button_more" href="#">see our works</a>
+      </footer>
     </section>
 
-    <div class="reviewSlider">
-      <div class="reviewSlider__items">
-        <div class="reviewSlider__item">
-          <div class="reviewSlider__wrap">
-            <blockquote class="reviewSlider__blockquote">
-              <p class="reviewSlider__blockquote-text">"Professionals in their craft! All products were super great with strong attention to details, and overall vibe"</p>
-              <footer class="reviewSlider__footer">
-                <p class="reviewSlider__name">Polina Kuzina</p>
-                <p class="reviewSlider__position">Manager at Craftwork</p>
-              </footer>
-            </blockquote>
-            <div class="reviewSlider__image">
-              <img src="" alt="#">
-            </div>
+    <div class="review">
+      <div class="review__header">
+        <h2 class="review__headline">Testimonials</h2>
+      </div>
+      <div class="review__items">
+        <div class="review__item">
+          <blockquote class="review__blockquote">
+            <p class="review__blockquote-text">"Professionals in their craft! All products were super great with strong attention to details, and overall vibe"</p>
+            <footer class="review__footer">
+              <p class="review__name">Polina Kuzina</p>
+              <p class="review__position">Manager at Craftwork</p>
+            </footer>
+          </blockquote>
+          <div class="review__image">
+            <img src="img/review.jpg" alt="Polina Kuzina">
           </div>
         </div>
+      </div>
+      <div class="review__slider-controls">
+        <button class="review__button js-prev button button_control">
+          <span class="button__icon">
+            <svg viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 1.5L2 9.313l7.5 7.812" stroke="currentColor" stroke-width="2"/></svg>
+          </span>
+          <span class="visually-hidden">Назад</span>
+        </button>
+        <button class="review__button js-next button button_control">
+          <span class="button__icon">
+            <svg viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 16.75L9 8.937 1.5 1.125" stroke="currentColor" stroke-width="2"/></svg>
+          </span>
+          <span class="visually-hidden">Вперед</span>
+        </button>
       </div>
     </div>
 
     <section class="client">
       <header class="client__header">
-        <h2 class="client__title"></h2>
+        <h2 class="client__headline">Our Clients</h2>
         <div class="client__desc">
-          <p class="client__subtitle"></p>
-          <p class="client__text"></p>
+          <p class="client__lead">We worked with</p>
+          <p class="client__text">Our favorite brands are our friends! We help them to achieve their goals, they help us to stay sharp.</p>
         </div>
       </header>
       <ul class="client__list">
         <li class="client__item">
-          <a class="client__link" href="#">
-            <img src="" alt="Lorem">
-          </a>
+          <img class="client__image" src="img/client-1.svg" width="80" height="63" alt="Lorem">
         </li>
         <li class="client__item">
-          <a class="client__link" href="#">
-            <img src="" alt="Lorem">
-          </a>
+          <img class="client__image" src="img/client-2.svg" width="52" height="70" alt="Lorem">
         </li>
         <li class="client__item">
-          <a class="client__link" href="#">
-            <img src="" alt="Lorem">
-          </a>
+          <img class="client__image" src="img/client-3.svg" width="56" height="68" alt="Lorem">
         </li>
         <li class="client__item">
-          <a class="client__link" href="#">
-            <img src="" alt="Lorem">
-          </a>
+          <img class="client__image" src="img/client-4.svg" width="146" height="50" alt="Lorem">
         </li>
         <li class="client__item">
-          <a class="client__link" href="#">
-            <img src="" alt="Lorem">
-          </a>
+          <img class="client__image" src="img/client-5.svg" width="60" height="60" alt="Lorem">
         </li>
       </ul>
     </section>
 
   </main>
-	{# mixin example #}
-	{{mixins.icon('facebook')}}
 
-
-	{# data usage example #}
-		{% import "data/data.html" as tests %}
-
-		{% for test in tests.list %}
-		<li>{{test.title}}</li>
-		{% endfor %}
-	{# end of example #}
+  {% include "partials/_footer.html" %}
 
 {% endblock %}

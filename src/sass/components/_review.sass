@@ -1,0 +1,85 @@
+.review
+	position: relative
+	margin-top: 140px
+	margin-bottom: 175px
+
+.review__header
+	position: absolute
+	top: 0
+	right: 0
+	left: 0
+	+container
+
+.review__headline
+	position: relative
+	flex-basis: 100%
+	max-width: 100%
+	+col
+	font-weight: 500
+	font-size: 14px
+	line-height: 1.5
+	letter-spacing: 4px
+	text-transform: uppercase
+	color: rgba($base-color, 0.7)
+
+.review__headline::before
+	display: inline-block
+	padding-right: 10px
+	content: "—"
+
+.review__items
+	+container
+
+.review__item
+	+row
+
+.review__blockquote
+	flex-basis: 50%
+	max-width: 50%
+	padding: 90px 15px 130px
+	display: flex;
+	flex-direction: column
+	justify-content: space-between
+
+.review__footer
+	margin-top: auto
+
+.review__image
+	flex-basis: 41.66666667%
+	max-width: 41.66666667%
+	margin-left: 8.33333333%
+	+col
+
+.review__image img
+	display: block
+	width: 100%
+	height: auto
+	line-height: 1
+
+.review__blockquote-text
+	margin-bottom: 75px
+	font-weight: 600
+	font-size: 40px
+	line-height: 1.25
+	letter-spacing: -1px
+	color: $base-color
+
+.review__name
+	margin-bottom: 15px
+	font-weight: 500
+	font-size: 22px
+	line-height: 1.5
+	color: $base-color
+
+.review__position
+	color: rgba($base-color, 0.7)
+
+.review__slider-controls
+	position: absolute
+	bottom: 0
+	right: 0
+	left: 0
+	+container
+
+.review__button
+	margin: 0 15px
