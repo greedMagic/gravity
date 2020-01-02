@@ -36,7 +36,15 @@ document.addEventListener('DOMContentLoaded', function(){
     dots: false,
     speed: 300,
     slidesToShow: 1,
-    arrows: false,
-    variableWidth: true
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 850,
+        settings: {
+          slidesToShow: 1,
+          variableWidth: false
+        }
+      }
+    ]
   });
 });

@@ -1,6 +1,9 @@
 .blockquote
-	margin-top: 140px
-	margin-bottom: 140px
+	margin-top: 55px
+	margin-bottom: 55px
+	@media (min-width: 576px)
+		margin-top: 140px
+		margin-bottom: 140px
 
 .blockquote__wrap
 	position: relative
@@ -8,21 +11,39 @@
 	+container
 
 .blockquote__content
-	flex-basis: 50%
-	max-width: 50%
+	flex-basis: 100%
+	max-width: 100%
 	padding: 35px 15px
+	@media (min-width: 576px)
+		flex-basis: 75%
+		max-width: 75%
+	@media (min-width: 768px)
+		flex-basis: 50%
+		max-width: 50%
 
 .blockquote__image
-	flex-basis: 41.66666667%
-	max-width: 41.66666667%
 	width: 100%
-	height: 565px
-	padding-left: 15px
-	margin-right: 8.33333333%
+	height: 150px
+	overflow: hidden
+	@media (min-width: 576px)
+		max-width: 25%
+		height: 180px
+	@media (min-width: 768px)
+		flex-basis: 41.66666667%
+		max-width: 41.66666667%
+		height: 315px
+		margin-right: 8.33333333%
+		padding-left: 15px
+	@media (min-width: 992px)
+		height: 565px
+
 
 .blockquote__image img
 	display: block
+	width: 100%
+	height: 100%
 	line-height: 1
+	object-fit: cover
 
 .blockquote__title
 	margin-bottom: 30px

@@ -2,15 +2,16 @@
 	position: relative
 
 .welcome__items
-	margin-bottom: -240px
+	@media (min-width: 992px)
+		margin-bottom: -465px
 
 .welcome__item
 	position: relative
-	margin-bottom: 240px
-	@media (min-width: 576px)
+	min-height: 480px
+	@media (min-width: 992px)
+		margin-bottom: 465px
+	@media (min-width: 1200px)
 		min-height: 78vh
-	@media (max-width: 991.98px)
-		min-height: 480px
 
 .welcome__inner
 	+container
@@ -19,33 +20,29 @@
 .welcome__box
 	position: relative
 	z-index: 20
-	max-width: 50%
 	width: 100%
 	margin-right: auto
 	padding: 70px 15px
 	user-select: text
-	@media (max-width: 575.98px)
-		max-width: 100%
-	@media (min-width: 576px) and (max-width: 767.98px)
-		max-width: 75%
+	@media (min-width: 576px)
+		max-width: 50%
 
 .welcome__image
 	position: absolute
 	top: 0
 	right: 0
-	bottom: 0
-	display: block
 	max-width: 50%
-	width: 100%
-	padding-left: 15px
-	@media (max-width: 575.98px)
-		top: 50%
-		bottom: unset
-		max-width: 195px
-		height: 180px
-		transform: translateY(-50%)
-	@media (min-width: 576px) and (max-width: 767.98px)
-		max-width: 25%
+	height: 160px
+	@media (min-width: 576px)
+		top: 0
+		right: 0
+		bottom: 0
+		display: block
+		max-width: 50%
+		width: 100%
+		height: 100%
+		padding-left: 15px
+
 
 .welcome__image img
 	display: block
@@ -59,15 +56,17 @@
 
 .welcome__modal
 	position: absolute
-	bottom: -35%
+	bottom: -25%
 	right: -50%
 	z-index: 10
-	display: block
+	display: none
 	width: 400px
 	height: 310px
 	box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.44)
-	@media (max-width: 991.98px)
-		display: none
+	@media (min-width: 992px)
+		display: block
+	@media (min-width: 1200px)
+		bottom: -35%
 
 .welcome__modal img
 	display: block
@@ -76,19 +75,24 @@
 
 .welcome__title
 	display: block
-	margin-bottom: 25px
+	max-width: 50%
+	margin-bottom: 35px
 	+title
-	font-size: 60px
+	font-size: 25px
 	line-height: 1.2
 	letter-spacing: -1px
 	color: #151515
-	@media (max-width: 575.98px)
+	@media (min-width: 575.98px)
 		font-size: 45px
+		max-width: unset
+	@media (min-width: 768px)
+		font-size: 60px
 
 .welcome__text
 	display: block
-	margin-bottom: 55px
-	font-size: inherit
+	margin-bottom: 75px
+	font-size: 14px
 	line-height: 1.55
-	@media (max-width: 575.98px)
-		background: rgba(255,255,255,0.5)
+	@media (min-width: 576px)
+		margin-bottom: 55px
+		font-size: 18px
