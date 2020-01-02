@@ -1,0 +1,59 @@
+.search
+	position: relative
+
+.search__wrap
+	position: relative
+	display: flex
+
+.search__label
+	position: relative
+	width: 0
+	max-width: 320px
+	overflow: hidden
+
+.search__label-text
+	position: absolute
+	top: 0
+	left: 0
+	display: block
+	padding: 10px 15px
+	font-weight: 400
+	font-size: 18px
+	line-height: 1.7
+	white-space: nowrap
+	transition: all 200ms
+
+.search__input
+	display: inline-flex
+	padding: 10px 15px
+	font-weight: 400
+	font-size: 18px
+	line-height: 1.6
+	color: $base-color
+	background-color: transparent
+	border-bottom: 2px solid $base-color
+
+.search__button
+	display: inline-flex
+	width: 50px
+	height: 50px
+	padding: 10px 15px
+	align-items: center
+	justify-content: center
+	background-color: transparent
+	border: 2px solid transparent
+	&:hover
+		border-color: $base-color
+
+.search__icon svg
+	width: auto
+	height: 20px
+
+.search:focus-within .search__label
+	width: auto
+	overflow: unset
+
+.search:focus-within .search__label-text
+	opacity: 1
+	font-size: 10px
+	transform: translate(0, -50%)

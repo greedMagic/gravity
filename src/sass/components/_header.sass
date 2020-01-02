@@ -1,15 +1,23 @@
 .header
-	height: 140px
+	position: relative
 
 .header__wrap
+	padding-top: 45px
+	padding-bottom: 40px
 	+container
 	+row
+	align-items: center
 
 .header__logo,
 .header__main-menu
-	flex: 1
 	+col
+
+.header__logo svg
+	height: 24px
+	color: $base-color
 
 .header__search
 	flex: 4
 	+col
+	display: flex
+	justify-content: center
