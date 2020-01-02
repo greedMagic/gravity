@@ -9,16 +9,22 @@
 	+row
 
 .client__headline
-	flex-basis: 58.33333333%
-	max-width: 58.33333333%
+	flex-basis: 100%
+	max-width: 100%
 	+col
 	+title
 	letter-spacing: -1px
+	@media (min-width: 992px)
+		flex-basis: 58.33333333%
+		max-width: 58.33333333%
 
 .client__desc
-	flex-basis: 41.66666667%
-	max-width: 41.66666667%
+	display: none
 	+col
+	@media (min-width: 992px)
+		display: block
+		flex-basis: 41.66666667%
+		max-width: 41.66666667%
 
 .client__lead
 	margin-top: 10px
@@ -45,6 +51,12 @@
 
 .client__item
 	+col
+	@media (max-width: 767.98px)
+		flex-basis: 50%
+		max-width: 50%
+		display: flex
+		padding: 25px 15px
+		justify-content: center
 
 .client__image
 	overflow: hidden

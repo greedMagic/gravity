@@ -15,13 +15,15 @@
 	align-items: center
 
 .footer__top
-	padding-top: 60px
+	padding-top: 50px
 	padding-bottom: 40px
+	@media (min-width: 576px)
+		padding-top: 60px
 
 .footer__bottom
 	position: relative
 	padding-top: 30px
-	padding-bottom: 40px
+	padding-bottom: 25px
 	&::before
 		position: absolute
 		top: 0
@@ -33,26 +35,74 @@
 		content: ""
 		background-color: rgba(#ffffff, 0.2)
 
+	@media (min-width: 576px)
+		padding-bottom: 40px
+
 .footer__logo
-	flex-basis: 16.66666667%
-	max-width: 16.66666667%
-	+col
+	display: none
+	@media (min-width: 992px)
+		flex-basis: 16.66666667%
+		max-width: 16.66666667%
+		display: block
+		+col
+		color: #ffffff
+
+.footer__logo svg
+	margin-top: 5px
+	height: 24px
 	color: #ffffff
 
 .footer__links
-	flex-basis: 50%
-	max-width: 50%
-	width: 100%
-	+row
+	display: none
+	@media (min-width: 576px)
+		flex-basis: 100%
+		max-width: 100%
+		width: 100%
+		+row
+
+.footer__links_top
+	@media (min-width: 576px)
+		margin: 5px 0 40px
+	@media (min-width: 768px)
+		flex-basis: 65%
+		max-width: 65%
+		margin: 0
+	@media (min-width: 992px)
+		flex-basis: 50%
+		max-width: 50%
+
+.footer__links_bottom
+	@media (min-width: 576px)
+		flex-basis: 65%
+		max-width: 65%
+	@media (min-width: 992px)
+		flex-basis: 50%
+		max-width: 50%
+
 
 .footer__socials
-	+row
-	margin-left: auto
+	flex-basis: 100%
+	max-width: 100%
+	width: 100%
+	display: flex
+	justify-content: space-around
+	@media (min-width: 576px)
+		flex-basis: 35%
+		max-width: 35%
+	@media (min-width: 768px)
+		margin-left: auto
 
 .footer__form
-	flex-basis: 33.33333333%
-	max-width: 33.33333333%
 	+col
+	flex-basis: 100%
+	max-width: 100%
+	width: 100%
+	@media (min-width: 768px)
+		flex-basis: 35%
+		max-width: 35%
+	@media (min-width: 992px)
+		flex-basis: 33.33333333%
+		max-width: 33.33333333%
 
 .footer__link
 	display: flex
@@ -63,9 +113,20 @@
 	line-height: 1.5
 	color: #ffffff
 	text-decoration: none
+	transition: color .2s ease-in-out
+	&:focus,
+	&:hover
+		color: rgba(#ffffff, 0.75)
+	&:active
+		color: rgba(#ffffff, 0.15)
 
 .footer__link_pale
 	color: rgba(#ffffff, 0.4)
+	&:focus,
+	&:hover
+		color: #ffffff
+	&:active
+		color: rgba(#ffffff, 0.15)
 
 .footer__link-icon svg
 	width: auto

@@ -8,6 +8,7 @@
 	cursor: pointer
 
 .button_more
+	height: 50px
 	padding: 15px
 	font-weight: 500
 	font-size: 14px
@@ -16,11 +17,10 @@
 	text-transform: uppercase
 	color: #ffffff
 	background-color: $button
-	transition: background-color .35s
+	transition: background-color .2s ease-in-out, transform .15s ease
 	&:focus,
 	&:hover
 		background-color: darken($button, 15%)
-		transition-duration: .175s
 	&:active
 		transform: translateY(2px)
 		transition-duration: .175s
@@ -31,9 +31,9 @@
 	line-height: 1
 	color: #ffffff
 	background-color: $button-slide
+	transition: background-color .15s ease, transform .15s ease
 	&:focus,
 	&:hover
-		transition-duration: .175s
 		background-color: darken($button, 15%)
 	&:active
 		transform: translateY(2px)

@@ -42,8 +42,17 @@
 	align-items: center
 
 .menu__header
-	padding-top: 45px
-	padding-bottom: 40px
+	display: flex
+	justify-content: flex-end
+	ppadding-top: 15px
+	padding-bottom: 15px
+	@media (min-width: 576px)
+		padding-top: 20px
+		padding-bottom: 20px
+		align-items: center
+	@media (min-width: 992px)
+		padding-top: 45px
+		padding-bottom: 40px
 
 .menu__list
 	min-width: 320px
@@ -60,9 +69,16 @@
 	padding: 10px 15px
 	font-weight: 600
 	+title
+	color: $base-color
 	letter-spacing: -1px
 	text-decoration: none
 	transform: translateZ(0)
+	transition: color .2s ease-in-out
+	&:hover,
+	&:focus
+		color: rgba($base-color, 0.55)
+	&:active
+		color: rgba($base-color, 0.15)
 
 .menu.is-active .menu__wrap
 	overflow: auto

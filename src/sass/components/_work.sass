@@ -1,12 +1,17 @@
 .work
 	position: relative
-	margin-top: 140px
-	margin-bottom: 255px
+	margin-top: 100px
+	margin-bottom: 100px
+	@media (min-width: 992px)
+		margin-top: 140px
+		margin-bottom: 255px
 
 .work__header
 	+container
 	+row
-	margin-bottom: 105px
+	margin-bottom: 55px
+	@media (min-width: 992px)
+		margin-bottom: 105px
 
 .work__footer
 	+container
@@ -18,7 +23,7 @@
 	position: relative
 	flex-basis: 100%
 	max-width: 100%
-	margin-bottom: 40px
+	margin-bottom: 25px
 	+col
 	font-weight: 500
 	font-size: 14px
@@ -26,6 +31,8 @@
 	letter-spacing: 4px
 	text-transform: uppercase
 	color: rgba($base-color, 0.7)
+	@media (min-width: 576px)
+		margin-bottom: 40px
 
 .worke__headline::before
 	display: inline-block
@@ -33,25 +40,41 @@
 	content: "—"
 
 .work__lead
-	flex-basis: 50%
-	max-width: 50%
+	margin-bottom: 35px
+	flex-basis: 100%
+	max-width: 100%
 	+col
 	+title
 	letter-spacing: -1px
+	@media (min-width: 992px)
+		flex-basis: 50%
+		max-width: 50%
+		margin-bottom: 0
 
 .work__footer-text
-	flex-basis: 66.66666667%
-	max-width: 66.66666667%
+	flex-basis: 100%
+	max-width: 100%
 	+col
+	@media (min-width: 992px)
+		flex-basis: 66.66666667%
+		max-width: 66.66666667%
+
 
 .work__button
-	margin: 0 15px 0 auto
+	margin: 15px auto
+	@media (min-width: 992px)
+		margin: 0 15px 0 auto
 
 .work__controls
-	flex-basis: 45%
-	max-width: 45%
-	display: flex
-	margin-left: 5%
+	flex-basis: 100%
+	max-width: 100%
+	@media (max-width: 991.98px)
+		+row
+	@media (min-width: 992px)
+		display: flex
+		flex-basis: 45%
+		max-width: 45%
+		margin-left: 5%
 
 .work__control
 	display: flex
@@ -65,19 +88,32 @@
 	text-transform: uppercase
 	letter-spacing: 4px
 	color: rgba($base-color, 0.3)
+	transition: color .15s ease-in-out
+	&:not(.work__control_current):focus,
+	&:not(.work__control_current):hover
+		color: $base-color
+	&:not(.work__control_current):active
+		color: rgba($base-color, 0.15)
 
 .work__control_current
-	color: #1434e1
+	color: $button
+	cursor: default
 
 .work__items
 	+container
 	+row
 
 .work__item
-	flex-basis: 33.33333333%
-	max-width: 33.33333333%
+	flex-basis: 100%
+	max-width: 100%
 	margin-bottom: 30px
 	+col
+	@media (min-width: 576px)
+		flex-basis: 50%
+		max-width: 50%
+	@media (min-width: 768px)
+		flex-basis: 33.33333333%
+		max-width: 33.33333333%
 
 .work__modal
 	display: block
